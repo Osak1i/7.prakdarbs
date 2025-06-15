@@ -2,7 +2,7 @@
 # 7. Prakstiskais darbs
 
 Uzdevumā izveidota saite kurā ir Attēlu galerija, kā arī kartes vietā tika ielikts grupu darba piemērs.
-
+https://osak1i.github.io/7.prakdarbs/
 ## Pārskats
 - Izveido lapu
 - Pievienot attēlu galeriju
