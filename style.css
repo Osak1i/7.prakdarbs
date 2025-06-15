@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+  background-color: #121212; /* tumša fona krāsa */
+  color: #e0e0e0; /* gaiši pelēks teksts */
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #f39c12; /* silti dzeltena virsrakstiem */
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Attēlu galerija */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #444; /* tumšs rāmis ap attēlu */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  background-color: #1e1e1e;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  border-color: #f39c12;
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.8);
+}
+
+.image:hover img {
+  transform: scale(1.05);
+}
+
+/* iFrame konteineris */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0;
+  border-radius: 12px;
+  border: 3px solid #f39c12;
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.5);
+  background-color: #1e1e1e;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
