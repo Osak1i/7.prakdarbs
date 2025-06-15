@@ -11,13 +11,13 @@ Uzdevumā izveidota saite kurā ir Attēlu galerija, kā arī kartes vietā tika
 ```
 projekts/
 ├── images/
-│   ├── 1.webp
-│   ├── 2.webp
-│   └── ...
+│   ├── 1.png
+│   ├── 2.jpeg
+│   └── 3.webp
 ├── .gitignore
+├── README.md
 ├── index.html
-├── style.css
-└── README.md
+└── style.css
 ```
 
 ## Autori
